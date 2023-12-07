@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+body{
+    background-color: black;
+}
+
+.cad{
+    font-size: 60px;
+    position: absolute;
+    color:cornflowerblue;
+    
+}

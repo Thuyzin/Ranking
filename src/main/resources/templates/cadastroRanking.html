@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>
+        Cadastrar jogadores
+    </h1>
+
+    <div>
+        <form action="#" th:action="@{cadastroRanking}" th:object="${player}" method="post" >
+            <label class="lbl" for="nome">nome</label>
+            <input  th:field="*{nome}" id="nome" class="caixa" placeholder="Digite o seu nome" type="text">
+            <label class="lbl" for="nick">nick</label>
+            <input  th:field="*{nick}" id="nick" class="caixa" placeholder="Digite seu Nick" type="text">
+            <label class="lbl" for="jogo favorito">jogo favorito</label>
+            <input  th:field="*{jogo}" id="jogo favorito" class="caixa" placeholder="Jogo Favorito" type="text">
+            <input type="submit" class="primary_button">
+        </form>
+    </div>
+    
+</body>
+</html>
